@@ -2,3 +2,9 @@ build/
 build.log
 .DS_Store
 android/build.properties
+example_test_build
+node_modules
+/gulpfile.js
+/package.json
+iphone/Parse.xcodeproj/project.xcworkspace/xcuserdata/
+iphone/Parse.xcodeproj/xcuserdata/
