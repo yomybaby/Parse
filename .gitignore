@@ -2,7 +2,8 @@ build/
 build.log
 .DS_Store
 android/build.properties
-example_test_build
+example_tiapp/build/
+example_tiapp/modules/
 node_modules
 /gulpfile.js
 /package.json

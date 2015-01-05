@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>kr.yostudio.sandbox</id>
+  <name>eu.rebelcorp.parse</name>
+  <version>1.0</version>
+  <publisher>not specified</publisher>
+  <url>http://yoururl.com</url>
+  <description/>
+  <copyright>not specified</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>a0261f42-5dd0-4760-abed-ede3b6da609b</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>FacebookAppID</key>
+        <string>773837786030122</string>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  </android>
+  <mobileweb>
+    <precache/>
+    <splash>
+      <enabled>true</enabled>
+      <inline-css-images>true</inline-css-images>
+    </splash>
+    <theme>default</theme>
+  </mobileweb>
+  <modules>
+    <module platform="android" version="0.6">eu.rebelcorp.parse</module>
+    <module platform="iphone" version="0.1.1">rebel.parse</module>
+  </modules>
+  <deployment-targets>
+    <target device="android">true</target>
+    <target device="blackberry">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+    <target device="mobileweb">true</target>
+  </deployment-targets>
+  <sdk-version>3.4.1.GA</sdk-version>
+  <property name="Parse_AppId" type="string">7LTuwRWw35YEHKt99nWZMMN8lXKx8boBlCdTmuaW</property>
+  <property name="Parse_ClientKey" type="string">z1x3GNGEJVgJyz0looCpGbOJUYceT8dFZ5pCSLBq</property>
+</ti:app>
