@@ -73,8 +73,8 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *launchOptions = [[TiApp app] launchOptions];
     
-    NSString *applicationId = [[TiApp tiAppProperties] objectForKey:@"rebel.parse.appId"];
-    NSString *clientKey = [[TiApp tiAppProperties] objectForKey:@"rebel.parse.clientKey"];
+    NSString *applicationId = [[TiApp tiAppProperties] objectForKey:@"Parse_AppId"];
+    NSString *clientKey = [[TiApp tiAppProperties] objectForKey:@"Parse_ClientKey"];
     
     NSLog(@"appId: %@", applicationId);
     NSLog(@"clientKey: %@", clientKey);
@@ -366,8 +366,9 @@
     
     // Store the deviceToken in the current Installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:[deviceToken dataUsingEncoding:NSUTF8StringEncoding]];
+    [currentInstallation setDeviceToken:deviceToken];
     [currentInstallation saveInBackground];
+    
 }
 
 -(void)subscribeChannel:(id)channel
